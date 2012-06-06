@@ -6,9 +6,9 @@ jQuery ui widget to add mouse drag adjustment to numeric input fields.
 ## backStory
 ======
 
-I was inspired some of Bret Victor's demo's in his talk on "Inventing on Principle,"
-where he showed live code editing. In particular I really liked the natural manipulation
-of values using sliders and color pickers that magically appear as you mouse over
+I recently found [Bret ](http://github.com/worrydream)[Victor](http://worrydream.com/)['s](http://worrydream.com/Tangle/) talk on ["Inventing on Principle,"](http://www.codinghorror.com/blog/2012/03/visualizing-code-to-fail-faster.html)
+where he showed live code editing. I was particularly inspired by the natural manipulation
+of values using sliders and color pickers that magically appear as you hover/drag over
 values in your code.
 
 I had a slider overlay implemented in an earlier version but I didn't like how it worked.

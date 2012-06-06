@@ -1,0 +1,24 @@
+<div id="page">
+
+    <div id="header">
+        <h1>dragIt Example</h1>
+    </div><!-- /header -->
+    
+    <div>click and drag across the input box!</div>
+
+    <div id="content">
+        <form>
+            <input type="text" length="50" id="dragMe" value="35">
+        </form>
+    </div><!-- /content -->
+    
+    <div>the dragIt constructor accepts precision (decimals), resolution (units per pixel drag), and numeric range</div>
+    
+    <div><pre>
+    $('#dragMe').dragIt({
+        precision: 2,
+        resolution: .33,
+        range: [-30, 500]
+    });</pre></div>
+
+</div>

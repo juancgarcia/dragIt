@@ -1,0 +1,13 @@
+Everything before the line containing only '---' will not be parsed
+
+---
+ name: jquery.ui dragIt Demo
+ description: widget to allow mouse-drag adjustments for numeric inputs
+ authors:
+   - JuanCGarcia
+ resources:
+   - https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js
+ normalize_css: no
+ ...
+
+Everything after the line containing only '...' will not be parsed

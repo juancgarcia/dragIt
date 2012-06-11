@@ -78,7 +78,7 @@ $(document).ready(function(){
         var dx = event.offsetX - this._entry.x,
             dy = event.offsetY - this._entry.y,
             marker = 100 * event.offsetX / this.element.outerWidth()
-            distance = 0,
+            distance = 0, value = 0,
             low = this.options.range[0],
             high = this.options.range[1];
         
@@ -94,9 +94,10 @@ $(document).ready(function(){
         */
         
         distance = dx * this.options.resolution;
-        distance = distance < low ? low: (distance > high ? high: distance);
+        value = this._entry.val + distance;
+        value = value < low ? low: (value > high ? high: value);
         
-        this.element[0].value = (this._entry.val + distance).toFixed(this.options.precision);
+        this.element[0].value = value.toFixed(this.options.precision);
     },
     _mouseStop: function(event){
         if(this.options.debug)log('input - draggy', this.element[0].id + ' ' + event.type, 'x: '+ this._entry.x, 'y: '+ this._entry.y );
